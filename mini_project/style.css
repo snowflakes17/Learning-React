@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
 }
 
 nav{
@@ -30,9 +32,44 @@ nav{
     font-weight: 600;
 }
 
-nav--icon{
+.nav--icon{
     height: 30px;
     margin-right: 7px;
+}
+
+main{
+    /* height: 100%; */
+    padding: 60px 30px;
+    color: #DEEBF8;
+    background-image: url(./image/react.png);
+    background-repeat: no-repeat;
+    /* background-position-x: right;
+    background-position-x: center; */
+    background-position: right 75%;
+}
+
+.main--title{
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 0em;
+}
+
+.main--facts{
+    margin-top: 50px;
+
+    /* after 400px new line starts... */
+    max-width: 400px; 
+}
+.main--facts > li{
+    line-height: 19px;
+    padding-block: 10px;
+
+}
+
+/* to color bullet points */
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
 }
 
 
